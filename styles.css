@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body, main, header, nav, ul, li, section, h1, span, p { 
+html, body, main, header, nav, ul, li, section, h1, span, p, img { 
     margin: 0;
     padding: 0;
 }
@@ -131,7 +131,7 @@ footer div {
 
 .flex-cell.four-column {
     width: 33.3%;
-    height: 400px;
+    height: 400px;    
 }
 
 .center { 
@@ -142,6 +142,7 @@ footer div {
 
 .flex-cell { 
     align-self: center;
+    
 }
 
 .royal-color { 
@@ -181,5 +182,61 @@ footer div {
     box-shadow: 1px 1px 20px #000;
     border: 1px solid #000;
     height: 300px;
-    width: 75%;
+    width: 80%;
+    min-width: 400px;
+    max-width: 550px;
+}
+
+.social-icons { 
+    color: #213142;
+    display: inline-block;
+    margin: 50px 20px;
+}
+
+.screenshot.envision-university { 
+    background: url("envisionuniversity.png") center;
+}
+
+.screenshot.bosma { 
+    background: url("bosma.png") center;
+}
+
+.screenshot.vivid-ciphers { 
+    background: url("vc.png") center;
+}
+
+.screenshot.tribute-page { 
+    background: url("tribute-page.png") center;
+}
+
+.screenshot.big-tim { 
+    background: url("big-tim.png") center;
+}
+
+.screenshot.number-guesser { 
+    background: url("number-guesser.png") center;
+}
+
+
+
+@media (max-width: 1400px){
+    .flex-cell.four-column {
+    width: 50%;
+    height: 400px;
+}
+}
+
+@media (max-width: 968px){
+    .flex-cell.four-column {
+    width: 100%;
+    height: 400px;
+}
+
+.quotes p { 
+    width: 100%;
+}
+
+.footer div { 
+    width: 100%;
+}
 }
