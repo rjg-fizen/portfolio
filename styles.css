@@ -176,3 +176,10 @@ footer div {
     color: #fff;
     padding: 2px;
 }
+
+.screenshot { 
+    box-shadow: 1px 1px 20px #000;
+    border: 1px solid #000;
+    height: 300px;
+    width: 75%;
+}
