@@ -75,14 +75,26 @@ footer div {
 }
 
 .top-nav {
-    font-weight: 400;
     padding: 20px 10px 10px 10px;
-    font-size: .375em;
     width: 100%;
-    font-family: 'Raleway';
     letter-spacing: 1.5px;
     text-align: right;
+    font: 400 .375em 'Raleway', sans-serif;
+    position: fixed;
 }
+
+.nav-scroll-start { 
+    /*opacity: .5;*/
+    margin-top: -50px;
+    transition: margin-top .5s;
+}
+
+.nav-scroll-stop { 
+    margin-top: 0;
+    transition: margin-top 1s;
+}
+
+
 
 .top-nav ul { 
     list-style: none;
@@ -91,6 +103,11 @@ footer div {
 .top-nav ul li { 
     display: inline-block;
     margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #002239;
 }
 
 .about { 
@@ -158,6 +175,10 @@ footer div {
 .tan-color {
     background-color: #bba8a0;
 }
+.white-color {
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+}
 
 .big-blue-btn { 
     background-color: #235270;
@@ -191,6 +212,10 @@ footer div {
     color: #213142;
     display: inline-block;
     margin: 50px 20px;
+}
+
+.social-icons:hover {
+    color: #bba8a0;
 }
 
 .screenshot.envision-university { 
