@@ -2,16 +2,16 @@ var projects = [
     {
         id: 1,
         name: "Envision University",
-        description: "A web application developed during my time at ntara. ",
-        technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
-        url: "",
+        description: "A c#-based, kentico web application with a heavy emphasis on accessibility. Lead developer on project while employed at ntara.",
+        technology: ['C#', 'HTML', 'LESS', 'Javascript', 'jQuery', 'Kentico CMS', 'SQL Server'],
+        url: "http://university.envisionus.com",
         github: "",
         screenshotClass: "envision-university"
     },
     {
         id: 2,
         name: "Bosma",
-        description: "",
+        description: "A c#-based, kentico web application with a heavy emphasis on accessibility. Worked as a back-end developer on this while at ntara.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
         url: "",
         github: "",
@@ -20,7 +20,7 @@ var projects = [
     {
         id: 3,
         name: "Vivid Ciphers",
-        description: "",
+        description: "An angular-based group collaboration project.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
         url: "",
         github: "",
@@ -29,7 +29,7 @@ var projects = [
     {
         id: 4,
         name: "Tribute Page",
-        description: "",
+        description: "A personal project utilizing vanilla CSS and HTML developed for FreeCodeCamp.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
         url: "",
         github: "",
@@ -38,7 +38,7 @@ var projects = [
     {
         id: 5,
         name: "Big Tim's Plumbing",
-        description: "",
+        description: "A personal project utilizing vanilla CSS, HTML, and Javascript.  Developed as part of a design series. ",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
         url: "",
         github: "",
@@ -47,7 +47,7 @@ var projects = [
     {
         id: 6,
         name: "Number Guesser",
-        description: "",
+        description: "A personal project utilizing vanilla CSS, HTML, and Javascript. This one is a little bit heavier on the Javascript.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
         url: "",
         github: "",
@@ -67,41 +67,43 @@ $(function () {
             + '"><div class="screenshot-info-header center flex-cell one-column"><p class="ninety-percent">'
             + project.name
             + '</p><span class="expand"><i class="fa fa-expand" aria-hidden="true"></i></span></div>'
-            + '<div class="screenshot-info-body">'
-            + '<p>' +  project.description + '</p>'
-            +  project.technology.join(',')
+            + '<div class="screenshot-info-body hidden"><p>' 
+            + project.description + '</p>'
+            + '<div class="links center"><a href="' 
+            + project.url
+            + '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a><a href="' 
+            + project.github
+            +  '" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>'
             + '</div></div></div></div>');
     })
 
-    $('.expand').on('click', function () {
+    var screenShotInfoBodyToggle = function () {
+        var that = $(this);
         var screenshotInfo = $(this).closest('.screenshot-info');
         screenshotInfo.removeClass('center');
-      
+
         screenshotInfo.animate({
             height: "300px"
         }, 500, function () {
-           
-            // var projectName = screenshotInfo.data('project');
+            screenshotInfo.find('.screenshot-info-body').removeClass('hidden');
+            
+            that.off();
 
+            that.on('click', function () {
+                screenshotInfo.animate({ 
+                    height: '35px'
+                }, 500, function() {
+                    $(this).removeAttr('style');
+                });
 
-            // var currentProject = projects.filter(function(project){
-            //     return project.id == projectName;
-            // })[0];
-
-
-            // var list = "";
-            // currentProject.technology.map(function(tech){
-            //     list += "<li>" + tech + "</li>";
-            // });
-
-            // screenshotInfo.find('.screenshot-info-body').append("<ul class='tech-list'>" + list + "</ul>");
-           
-            $('.screenshot').on('click', function () {
-                $(this).find('.screenshot-info').removeAttr('style');
                 $(this).off();
+                $(this).on('click', screenShotInfoBodyToggle);
+                screenshotInfo.find('.screenshot-info-body').addClass('hidden');
             })
         });
-    })
+    };
+
+    $('.screenshot-info-header').on('click', screenShotInfoBodyToggle);
 
 
 

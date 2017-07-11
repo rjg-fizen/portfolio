@@ -108,6 +108,14 @@ footer div {
 .top-nav a {
     text-decoration: none;
     color: #002239;
+    display: inline-block;
+}
+
+.top-nav a:hover {
+    border-radius: 3px;
+    background-color: #213142;
+    color: #fff;
+    padding: 2px;
 }
 
 .about { 
@@ -256,8 +264,35 @@ footer div {
 
 .screenshot-info-body { 
     font-family: 'Raleway';
-    font-size: .75em;
+    font-size: 1em;
     padding: 10px;
+    position: relative;
+}
+
+.screenshot-info-body .links {
+    position: absolute;
+    top: 219px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid #fff;
+    padding: 2px;
+    
+}
+
+.screenshot-info-body .links a { 
+    color: #235270;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.screenshot-info-body .links a:hover { 
+    color: #fff;
+}
+
+.hidden { 
+    opacity: 0;
+    display: none;
 }
 
 .screenshot:hover > div {
