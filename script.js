@@ -13,7 +13,7 @@ var projects = [
         name: "Bosma",
         description: "A c#-based, kentico web application with a heavy emphasis on accessibility. Worked as a back-end developer on this while at ntara.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
-        url: "",
+        url: "http://www.bosma.org",
         github: "",
         screenshotClass: "bosma"
     },
@@ -22,8 +22,8 @@ var projects = [
         name: "Vivid Ciphers",
         description: "An angular-based group collaboration project.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
-        url: "",
-        github: "",
+        url: "http://www.vividciphers.com",
+        github: "https://github.com/VividCiphers/vivid-ciphers-website",
         screenshotClass: "vivid-ciphers"
     },
     {
@@ -31,8 +31,8 @@ var projects = [
         name: "Tribute Page",
         description: "A personal project utilizing vanilla CSS and HTML developed for FreeCodeCamp.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
-        url: "",
-        github: "",
+        url: "https://codepen.io/ryanjgross/pen/pepQpa",
+        github: "https://github.com/rjg-fizen/tribute-page",
         screenshotClass: "tribute-page"
     },
     {
@@ -49,8 +49,8 @@ var projects = [
         name: "Number Guesser",
         description: "A personal project utilizing vanilla CSS, HTML, and Javascript. This one is a little bit heavier on the Javascript.",
         technology: ['C#', 'HTML', 'LESS', 'JAVSCRIPT', 'JQUERY', 'KENTICO CMS', 'SQL SERVER'],
-        url: "",
-        github: "",
+        url: "https://codepen.io/ryanjgross/pen/acb1ec1c6a072484e24cef2999afe826",
+        github: "https://codepen.io/ryanjgross/pen/9556847874ef0f8a46ce308e8aace328",
         screenshotClass: "number-guesser"
     },
 ];

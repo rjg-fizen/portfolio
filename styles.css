@@ -254,7 +254,7 @@ footer div {
     font-family: "Permanent Marker";
     font-weight: 300;
     letter-spacing: 1px;
-    transition: height .5s;
+    transition: height .5s, opacity .5s;
 }
 
 .screenshot-info-header { 
