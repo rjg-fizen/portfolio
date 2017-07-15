@@ -18,14 +18,14 @@ body {
 }
 
 .hero {
-    background: url(mountain.jpg);
+    background: url(../images/mountain.jpg);
     width: 100%;
     height: 800px;
 
 }
 
 .footer { 
-    background: url(winterpath.jpg);
+    background: url(../images/winterpath.jpg);
     width: 100%;
     height: 800px;
     color: #fff;
@@ -41,10 +41,8 @@ footer div {
 }
 
 .footer p {
-    font-family: 'Raleway';  
-    font-size: .75em;
+    font: 300 .75em 'Raleway', sans-serif; 
     color: #235270;
-    font-weight: 300;
 }
 
 .tagline {
@@ -59,10 +57,8 @@ footer div {
 }
 
 .subtext { 
-    font-weight: 300;
-    font-family: 'Raleway';
+    font: 300 .75em 'Raleway', sans-serif;
     margin-top: -15px;
-    font-size: .75em;
     margin-left: 3em;
 }
 
@@ -84,7 +80,6 @@ footer div {
 }
 
 .nav-scroll-start { 
-    /*opacity: .5;*/
     margin-top: -50px;
     transition: margin-top .5s;
 }
@@ -93,8 +88,6 @@ footer div {
     margin-top: 0;
     transition: margin-top 1s;
 }
-
-
 
 .top-nav ul { 
     list-style: none;
@@ -123,11 +116,10 @@ footer div {
     height: 250px;
     width: 100%;
     font-weight: 300;
+    font-size: 1.65em;
     border-top: 1px solid #fff;
     letter-spacing: .5px;
-    font-size: 1.65em;
     color: #fff;
-    /*box-shadow: 5px 0px 5px #F7F0F5;*/
 }
 
 .quotes { 
@@ -176,12 +168,6 @@ footer div {
     align-items: flex-end;
 }
 
-/*.top { 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}*/
-
 .align-right {
     display: inline-block;
     text-align: right;
@@ -191,10 +177,8 @@ footer div {
     width: 90%;
 }
 
-
 .flex-cell { 
     align-self: center;
-    
 }
 
 .royal-color { 
@@ -214,18 +198,6 @@ footer div {
     background-color: #fff;
     border-bottom: 1px solid #333;
     box-shadow: 0px 5px 20px #333;
-}
-
-.big-blue-btn { 
-    background-color: #235270;
-    color: #fff;
-    padding: 5px 35px;
-    border-radius: 10px;
-    font-size: 1.5em;
-    font-family: 'Permanent Marker';
-    border: none;
-    margin-top: 50px;
-    
 }
 
 .active { 
@@ -250,9 +222,7 @@ footer div {
     height: 35px;
     background-color: #333;
     color: #fff;
-    font-size: 1.5em;
-    font-family: "Permanent Marker";
-    font-weight: 300;
+    font: 300 1.5em "Permanent Marker";
     letter-spacing: 1px;
     transition: height .5s, opacity .5s;
 }
@@ -263,8 +233,7 @@ footer div {
 }
 
 .screenshot-info-body { 
-    font-family: 'Raleway';
-    font-size: 1em;
+    font: 1em 'Raleway', sans-serif;
     padding: 10px;
     position: relative;
 }
@@ -316,27 +285,27 @@ footer div {
 }
 
 .screenshot.envision-university { 
-    background: url("envisionuniversity.png") center;
+    background: url("../images/envisionuniversity.png") center;
 }
 
 .screenshot.bosma { 
-    background: url("bosma.png") center;
+    background: url("../images/bosma.png") center;
 }
 
 .screenshot.vivid-ciphers { 
-    background: url("vc.png") center;
+    background: url("../images/vc.png") center;
 }
 
 .screenshot.tribute-page { 
-    background: url("tribute-page.png") center;
+    background: url("../images/tribute-page.png") center;
 }
 
 .screenshot.big-tim { 
-    background: url("big-tim.png") center;
+    background: url("../images/big-tim.png") center;
 }
 
 .screenshot.number-guesser { 
-    background: url("number-guesser.png") center;
+    background: url("../images/number-guesser.png") center;
 }
 
 

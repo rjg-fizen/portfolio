@@ -62,18 +62,18 @@ $(function () {
         $('.work').find('.flex')
             .append('<div class="flex-cell four-column center"><div class="screenshot '
             + project.screenshotClass
-            + ' bottom"><div class="screenshot-info wrap" data-project="' 
-            + project.id 
+            + ' bottom"><div class="screenshot-info wrap" data-project="'
+            + project.id
             + '"><div class="screenshot-info-header center flex-cell one-column"><p class="ninety-percent">'
             + project.name
             + '</p><span class="expand"><i class="fa fa-expand" aria-hidden="true"></i></span></div>'
-            + '<div class="screenshot-info-body hidden"><p>' 
+            + '<div class="screenshot-info-body hidden"><p>'
             + project.description + '</p>'
-            + '<div class="links center"><a href="' 
+            + '<div class="links center"><a href="'
             + project.url
-            + '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a><a href="' 
+            + '" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a><a href="'
             + project.github
-            +  '" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>'
+            + '" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>'
             + '</div></div></div></div>');
     })
 
@@ -86,13 +86,13 @@ $(function () {
             height: "300px"
         }, 500, function () {
             screenshotInfo.find('.screenshot-info-body').removeClass('hidden');
-            
+
             that.off();
 
             that.on('click', function () {
-                screenshotInfo.animate({ 
+                screenshotInfo.animate({
                     height: '35px'
-                }, 500, function() {
+                }, 500, function () {
                     $(this).removeAttr('style');
                 });
 
@@ -104,8 +104,6 @@ $(function () {
     };
 
     $('.screenshot-info-header').on('click', screenShotInfoBodyToggle);
-
-
 
     $(window).on('scroll', function () {
         var scrollPos = $(this).scrollTop();
